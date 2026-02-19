@@ -36,3 +36,91 @@ footer { text-align: center; padding: 40px; color: var(--text-dim); font-size: 0
     .nav-links { display: none; }
     .hero h1 { font-size: 1.8rem; }
 }
+
+/* Social Icons Styling */
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    margin: 0 12px;
+    font-size: 24px;              /* icon size */
+    color: var(--text-main);
+    background: var(--card-bg);
+    border-radius: 50%;
+    border: 1px solid #334155;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    background: var(--accent);
+    color: #0f172a;
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 10px 25px rgba(56, 189, 248, 0.3);
+}
+.logo {
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--text-main);
+}
+
+footer {
+    background: #0b1220;
+    padding: 50px 20px;
+    text-align: center;
+    border-top: 1px solid #1e293b;
+}
+
+.footer-content p {
+    margin: 8px 0;
+    color: var(--text-dim);
+}
+
+footer a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+#publications .card {
+    border-left: 4px solid var(--accent);
+}
+
+#publications a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#publications a:hover {
+    text-decoration: underline;
+}
+
+.achievement-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.achievement-list li {
+    margin-bottom: 14px;
+    padding-left: 18px;
+    position: relative;
+    color: var(--text-main);
+}
+
+.achievement-list li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+}
+

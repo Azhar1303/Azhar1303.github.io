@@ -10,68 +10,220 @@
 <body>
 
     <nav class="navbar">
-        <div class="logo">MA K.</div>
+        <div class="logo">Mohammad Azhar Khan</div>
+
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
+            <li><a href="#about-me">About Me</a></li>
             <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#publications">Publications</a></li>
             <li><a href="#achievements">Achievements</a></li>
         </ul>
     </nav>
 
+    <!-- Hero Section -->
     <section id="about" class="hero">
         <div class="hero-content">
-            <img src="assests/Azhar_pic.jpg" alt="Mohammad Azhar Khan" class="profile-pic">
+            <img src="assets/Azhar_pic.jpg" alt="Mohammad Azhar Khan" class="profile-pic">
             <h1>Mohammad Azhar Khan</h1>
             <p class="subtitle">M.Tech in CSE @ IIT Hyderabad | Research Assistant</p>
+
             <div class="social-icons">
-                <a href="mailto:mdazharkhan704@gmail.com"><i class="fas fa-envelope"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="mailto:mdazharkhan704@gmail.com" target="_blank">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://in.linkedin.com/in/mohdazharkhan" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/Azhar1303" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://docs.google.com/document/d/1s5zN52-mkTuGuwa7zKrDfRfkXcL0LLJRlfF3EGSZtYA/edit?usp=sharing" 
+                   target="_blank" 
+                   title="View Resume">
+                    <i class="fas fa-file-alt"></i>
+                </a>
             </div>
         </div>
     </section>
 
-    <section id="experience" class="container">
-        <h2 class="section-title">Research & Work Experience</h2>
+    <!-- About Me -->
+    <section id="about-me" class="container">
+        <h2 class="section-title">About Me</h2>
         <div class="card">
-            <h3>Research Assistant | IIT Hyderabad</h3>
-            <p class="date">2024 - Present</p>
-            <ul>
-                <li>Advancing Tensor Sketching methods for dimensionality reduction[cite: 12].</li>
-                <li>Theoretical analysis of sketching algorithms and variance bounds[cite: 13].</li>
-            </ul>
-        </div>
-        <div class="card">
-            <h3>Research Intern | SPIRE Lab, IISc Bangalore</h3>
-            <p class="date">Dec 2022 - April 2023</p>
-            <p>Designed RNN-based NLP models for grammatical error detection and pronunciation rating[cite: 17, 18].</p>
+            <p>
+                I am an M.Tech student in Computer Science and Engineering at IIT Hyderabad and currently working as a Research Assistant in the domain of Theoretical Machine Learning and Scalable Data Science.
+            </p>
+            <p>
+                I am working under Professor Dr. Rameshwar Pratap, focusing on advancing tensor sketching techniques for efficient, high-fidelity dimensionality reduction. My work involves rigorous theoretical analysis of sketching algorithms, including variance bounds, computational complexity analysis, and accuracy guarantees.
+            </p>
+            <p>
+                My research aims at overcoming the Curse of Dimensionality in machine learning models using advanced sketching and random projection techniques. I contribute to algorithm design, empirical benchmarking, and manuscript preparation targeting top-tier ML venues such as AISTATS and ICML.
+            </p>
+            <p>
+                Previously, as a Research Intern at SPIRE Lab, IISc Bangalore, I worked on language models and designed RNN-based NLP systems for grammatical error detection and pronunciation assessment.
+            </p>
         </div>
     </section>
 
+    <!-- Experience -->
+    <section id="experience" class="container">
+        <h2 class="section-title">Research & Work Experience</h2>
+
+        <div class="card">
+            <h3>IIT Hyderabad | Research Assistant | 2024 - Present</h3>
+            <ul>
+                <li>Advancing Tensor Sketching methods for efficient, high-fidelity dimensionality reduction of tensors and related topics.</li>
+                <li>Specializing in the theoretical analysis of sketching algorithms, including rigorous proofs for variance bounds, computational complexity, and accuracy guarantees.</li>
+                <li>Investigating methods to overcome the Curse of Dimensionality in ML models through advanced sketching and random projection techniques.</li>
+                <li>Contributing to algorithm design, empirical benchmarking with code, and manuscript preparation for top-tier ML venues including AISTATS and ICML.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>SPIRE Lab, IISc Bangalore | Research Intern | Dec 2022 - April 2023</h3>
+            <ul>
+                <li>Worked on language models and designed an NLP model based on RNN which can point out Grammatical Errors in the sentences.</li>
+                <li>Designed a mechanism for an mobile application English Gyani which can rate human pronunciation.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="container">
+        <h2 class="section-title">Education</h2>
+
+        <div class="card">
+            <h3>Indian Institute of Technology, Hyderabad | 2024 - 2027</h3>
+            <p><strong>Master of Technology (M.Tech) in Computer Science and Engineering</strong></p>
+            <p>Research Assistant | CGPA: 8.00 / 10.00</p>
+        </div>
+
+        <div class="card">
+            <h3>Government College Of Engineering, Keonjhar | 2020 - 2024</h3>
+            <p><strong>Bachelor of Technology (B.Tech) in Computer Science and Engineering</strong></p>
+            <p>CGPA: 8.86 / 10.00</p>
+        </div>
+
+        <div class="card">
+            <h3>Sri Chaitanya Techno School, Visakhapatnam | 2020</h3>
+            <p><strong>Higher Secondary Education (12th Grade)</strong></p>
+            <p>Grade: 83%</p>
+        </div>
+    </section>
+
+    <!-- Publications -->
+<section id="publications" class="container">
+    <h2 class="section-title">Publications</h2>
+
+    <div class="card">
+        <h3>
+            Efficient and Accurate Tensor Compression via Recursive Sketching
+        </h3>
+        <p>
+            <strong>Amit Sharma</strong>, <strong>Mohammad Azhar Khan</strong>, 
+            <strong>Rameshwar Pratap</strong>
+        </p>
+        <p>
+            <em>The 29th International Conference on Artificial Intelligence and Statistics (AISTATS 2026)</em>
+        </p>
+
+        <p>
+            We propose improved tensor sketching algorithms for estimating pairwise inner products of high-order tensor data. 
+            Our method provides unbiased estimates with significantly lower variance—independent of the number of tensor modes—
+            improving upon prior work by Rakhshan and Rabusseau (AISTATS 2020). 
+            Additionally, our recursive sketching framework achieves asymptotically improved time complexity, 
+            building upon techniques introduced by Ahle et al. (SODA 2020).
+        </p>
+
+        <p>
+            <a href="https://openreview.net/forum?id=AvXsY6fCMS" target="_blank">
+                View Paper (OpenReview)
+            </a>
+        </p>
+    </div>
+</section>
+
+    <!-- Projects -->
     <section id="projects" class="container">
-        <h2 class="section-title">Featured Projects</h2>
+        <h2 class="section-title">Projects</h2>
         <div class="project-grid">
             <div class="card">
                 <h3>MedicFree</h3>
-                <p>A hackathon-winning web app bridging government healthcare gaps using Al-driven daily logs[cite: 19, 20].</p>
-                <p class="tech-stack">React.js • Node.js • TensorFlow • OpenAI</p>
+                <p>A Web app for bridging the gap between government healthcare options and individuals for non-communicable diseases</p>
+                <ul>
+                    <li>It’s built using React.js, Node.js, MongoDB, Python, OpenAI, Pytesseract, Tensorflow, Matplotlib and Seaborn</li>
+                    <li>Innovated the "Doctor's Eye" daily log system integrating AI-driven analysis using OpenAI API.</li>
+                    <li>Created a specialized medical chatbot for addressing patient queries and critical recommendations.</li>
+                    <li>Developed long-term data analysis models to identify disease-prone areas for healthcare planning.</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <section id="achievements" class="container">
-        <h2 class="section-title">Major Achievements</h2>
-        <ul class="achievement-list">
-            <li><strong>Best Idea Award:</strong> MELCO Hackathon 2025 (Mitsubishi Electric)[cite: 34].</li>
-            <li><strong>AIR 30:</strong> Amazon ML Challenge 2025 (6,000+ teams)[cite: 35].</li>
-            <li><strong>Rank 54 Global:</strong> Shell AI Fuel Blend Prediction[cite: 36].</li>
-        </ul>
-    </section>
+    <!-- Achievements -->
+<section id="achievements" class="container">
+    <h2 class="section-title">Major Achievements</h2>
 
-    <footer>
+    <ul class="achievement-list">
+
+        <li>
+            <strong>AISTATS 2026:</strong> Co-authored accepted paper at 
+            The 29th International Conference on Artificial Intelligence and Statistics.
+        </li>
+
+        <li>
+            <strong>GATE 2024:</strong> Qualified in Computer Science (CS) and Data Science (DA) 
+            with scores of 643 (CS) and 454 (DA).
+        </li>
+
+        <li>
+            <strong>Best Idea Award:</strong> MELCO Hackathon 2025 (Mitsubishi Electric), 
+            secured internship and invitation to Japan.
+        </li>
+
+        <li>
+            <strong>AIR 30:</strong> Amazon ML Challenge 2025 among 6,000+ teams 
+            with custom multimodal PriceHead architecture.
+        </li>
+
+        <li>
+            <strong>Rank 54 (Global):</strong> Shell AI Fuel Blend Properties Prediction Hackathon 2025.
+        </li>
+
+        <li>
+            <strong>2nd Runner-up (Overall Winner):</strong> Hack4Bengal 2.0 among 150+ teams across India.
+        </li>
+
+        <li>
+            <strong>Grand Finalist:</strong> Smart Odisha Hackathon 2022.
+        </li>
+
+        <li>
+            <strong>Selected:</strong> Amazon ML Summer School 2022 
+            (Top 1000 students nationwide).
+        </li>
+
+        <li>
+            <strong>Competitive Programming:</strong> 1000+ Coding Score with 
+            400+ DSA problems solved on GeeksforGeeks.
+        </li>
+
+    </ul>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <p><strong>Contact</strong></p>
+        <p>
+            <a href="mailto:mdazharkhan704@gmail.com">Personal Mail</a> |
+            <a href="mailto:cs24mtech12006@iith.ac.in">Academic Mail</a>
+        </p>
         <p>© 2026 Mohammad Azhar Khan | Built with GitHub Pages</p>
-    </footer>
+    </div>
+</footer>
+
 
 </body>
 </html>
