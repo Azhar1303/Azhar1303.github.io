@@ -3,97 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <title>Mohammad Azhar Khan</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Font Awesome Icons -->
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/6b0f3e4e72.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="container">
-
-    <!-- SIDEBAR -->
-    <div class="sidebar">
-        <img src="assets/profile.jpg" class="profile-img">
-
-        <h2>Mohammad Azhar Khan</h2>
-        <p>M.Tech CSE | ML Researcher</p>
-
-        <div class="social-icons">
-            <a href="#"><i class="fas fa-file-alt"></i></a>
-            <a href="#"><i class="fab fa-github"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fas fa-envelope"></i></a>
-        </div>
-
-        <hr>
-
+<header>
+    <div class="container nav">
+        <h2 class="logo">Mohammad Azhar Khan</h2>
         <nav>
-            <a href="#about">About Me</a>
-            <a href="#education">Education</a>
             <a href="#research">Research</a>
+            <a href="#education">Education</a>
             <a href="#projects">Projects</a>
             <a href="#achievements">Achievements</a>
+            <a href="#skills">Skills</a>
         </nav>
+    </div>
+</header>
 
-        <button class="contact-btn">Get In Touch</button>
+<section class="hero">
+    <div class="container">
+        <h1>Machine Learning Researcher</h1>
+        <p class="subtitle">
+            M.Tech CSE @ IIT Hyderabad | Research Assistant | AIR 30 – Amazon ML Challenge 2025
+        </p>
 
-        <div class="footer-text">
-            © 2026 Mohammad Azhar Khan
+        <p>
+            I work on theoretical machine learning focusing on Tensor Sketching,
+            randomized dimensionality reduction, and overcoming the Curse of Dimensionality.
+            My work combines rigorous variance analysis, complexity proofs,
+            and large-scale empirical benchmarking.
+        </p>
+
+        <div class="hero-stats">
+            <div><strong>CGPA:</strong> 8.00/10</div>
+            <div><strong>GATE 2024:</strong> 643 (CS)</div>
+            <div><strong>Research Targets:</strong> AISTATS, ICML</div>
+        </div>
+
+        <div class="hero-buttons">
+            <a href="#" class="btn primary">Download CV</a>
+            <a href="mailto:mdazharkhan704@gmail.com" class="btn secondary">Contact</a>
         </div>
     </div>
+</section>
 
-    <!-- MAIN CONTENT -->
-    <div class="content">
+<section id="research" class="section">
+    <div class="container">
+        <h2>Research Experience</h2>
 
-        <section id="about">
-            <h1>Welcome to My Homepage!</h1>
-            <h2>About Me</h2>
-            <p>
-                I am currently pursuing M.Tech in Computer Science at IIT Hyderabad
-                working as a Research Assistant focusing on Tensor Sketching and
-                randomized dimensionality reduction.
-                My research interests include machine learning theory,
-                sketching algorithms, NLP, and deep learning.
-            </p>
-        </section>
-
-        <section id="education">
-            <h2>Education</h2>
-            <p><strong>IIT Hyderabad</strong> — M.Tech (2024–27)</p>
-            <p><strong>Government College of Engineering, Keonjhar</strong> — B.Tech (2020–24)</p>
-        </section>
-
-        <section id="research">
-            <h2>Research Experience</h2>
+        <div class="card">
+            <h3>IIT Hyderabad — Research Assistant (2024–Present)</h3>
             <ul>
-                <li>Advanced Tensor Sketching methods for high-dimensional ML.</li>
-                <li>Theoretical variance bounds and complexity analysis.</li>
-                <li>Research submissions to AISTATS & ICML.</li>
-                <li>RNN-based grammatical error detection at IISc.</li>
+                <li>Advancing Tensor Sketching for high-fidelity tensor dimensionality reduction</li>
+                <li>Proved variance bounds and theoretical guarantees</li>
+                <li>Designed improved sketching algorithms with complexity analysis</li>
+                <li>Preparing manuscripts for AISTATS & ICML</li>
             </ul>
-        </section>
+        </div>
 
-        <section id="projects">
-            <h2>Projects</h2>
-            <p><strong>MedicFree</strong> — AI-powered healthcare analytics system.</p>
-        </section>
-
-        <section id="achievements">
-            <h2>Achievements</h2>
+        <div class="card">
+            <h3>SPIRE Lab, IISc Bangalore — Research Intern (2022–23)</h3>
             <ul>
-                <li>AIR 30 — Amazon ML Challenge 2025</li>
-                <li>Best Idea Award — MELCO Hackathon</li>
-                <li>Global Rank 54 — Shell AI Hackathon</li>
-                <li>GATE Qualified</li>
+                <li>Designed RNN-based grammatical error detection model</li>
+                <li>Built pronunciation scoring system for English Gyani app</li>
             </ul>
-        </section>
-
+        </div>
     </div>
-</div>
+</section>
+
+<section id="education" class="section light">
+    <div class="container">
+        <h2>Education</h2>
+
+        <div class="card">
+            <h3>IIT Hyderabad</h3>
+            <p>M.Tech in CSE (2024–27)</p>
+            <p><strong>CGPA:</strong> 8.00/10.00</p>
+        </div>
+
+        <div class="card">
+            <h3>Government College of Engineering, Keonjhar</h3>
+            <p>B.Tech in CSE (2020–24)</p>
+            <p><strong>CGPA:</strong> 8.86/10.00</p>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="section">
+    <div class="container">
+        <h2>Projects</h2>
+
+        <div class="card">
+            <h3>MedicFree — AI Healthcare Analytics Platform</h3>
+            <p>
+                Hackathon-winning platform bridging public healthcare services with citizens.
+            </p>
+            <ul>
+                <li>Built with React, Node.js, MongoDB, TensorFlow, OpenAI API</li>
+                <li>Designed AI-driven "Doctor’s Eye" system for mental illness detection</li>
+                <li>Developed domain-specific medical chatbot</li>
+                <li>Performed long-term disease analytics and visualization</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="achievements" class="section light">
+    <div class="container">
+        <h2>Achievements</h2>
+
+        <ul class="achievement-list">
+            <li><strong>AIR 30</strong> — Amazon ML Challenge (6000+ teams)</li>
+            <li><strong>Global Rank 54</strong> — Shell AI Hackathon</li>
+            <li>Best Idea Award — MELCO Hackathon (Internship + Japan Invite)</li>
+            <li>GATE 2024 Qualified (CS: 643, DA: 454)</li>
+            <li>2nd Runner-Up — Hack4Bengal</li>
+            <li>400+ DSA Problems Solved (GeeksForGeeks)</li>
+        </ul>
+    </div>
+</section>
+
+<section id="skills" class="section">
+    <div class="container">
+        <h2>Technical Skills</h2>
+
+        <div class="skills-grid">
+            <div class="card">
+                <h3>Languages</h3>
+                <p>Python, Java, C, JavaScript</p>
+            </div>
+
+            <div class="card">
+                <h3>Machine Learning</h3>
+                <p>Transformers, LSTM, Dimensionality Reduction, NLP, Agentic AI</p>
+            </div>
+
+            <div class="card">
+                <h3>Libraries</h3>
+                <p>PyTorch, TensorFlow, Keras, Scikit-Learn, LangChain</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        © 2026 Mohammad Azhar Khan
+    </div>
+</footer>
 
 </body>
 </html>
-
-
