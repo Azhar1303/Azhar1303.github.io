@@ -1,170 +1,38 @@
 :root {
-    --primary: #2563eb;
-    --dark: #0f172a;
-    --light: #f8fafc;
-    --gray: #64748b;
-    --card-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    --bg-color: #0f172a;
+    --card-bg: #1e293b;
+    --text-main: #f8fafc;
+    --text-dim: #94a3b8;
+    --accent: #38bdf8;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
 
-body {
-    font-family: 'Inter', sans-serif;
-    color: var(--dark);
-    background: white;
-    line-height: 1.6;
-}
+body { background-color: var(--bg-color); color: var(--text-main); line-height: 1.6; }
 
-.container {
-    width: 90%;
-    max-width: 1100px;
-    margin: auto;
-}
+.container { max-width: 1000px; margin: auto; padding: 50px 20px; }
 
-/* Header */
+.navbar { display: flex; justify-content: space-between; padding: 20px 5%; background: rgba(15, 23, 42, 0.9); position: sticky; top: 0; z-index: 100; }
+.nav-links { display: flex; list-style: none; }
+.nav-links li { margin-left: 20px; }
+.nav-links a { color: var(--text-main); text-decoration: none; font-weight: 500; transition: 0.3s; }
+.nav-links a:hover { color: var(--accent); }
 
-header {
-    background: white;
-    border-bottom: 1px solid #eee;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
+.hero { text-align: center; padding: 100px 20px; background: linear-gradient(to bottom, #1e293b, #0f172a); }
+.profile-pic { width: 180px; height: 180px; border-radius: 50%; border: 4px solid var(--accent); margin-bottom: 20px; object-fit: cover; }
+.subtitle { color: var(--text-dim); font-size: 1.2rem; margin-top: 10px; }
 
-.nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 0;
-}
+.section-title { border-left: 4px solid var(--accent); padding-left: 15px; margin-bottom: 30px; font-size: 2rem; }
 
-nav a {
-    margin-left: 20px;
-    text-decoration: none;
-    color: var(--dark);
-    font-weight: 500;
-}
+.card { background: var(--card-bg); padding: 25px; border-radius: 12px; margin-bottom: 20px; border: 1px solid #334155; }
+.date { color: var(--accent); font-weight: bold; font-size: 0.9rem; }
 
-nav a:hover {
-    color: var(--primary);
-}
+.tech-stack { margin-top: 15px; font-size: 0.85rem; color: var(--accent); font-family: monospace; }
 
-/* Hero */
+footer { text-align: center; padding: 40px; color: var(--text-dim); font-size: 0.9rem; }
 
-.hero {
-    padding: 80px 0;
-}
-
-.hero h1 {
-    font-size: 40px;
-    margin-bottom: 15px;
-}
-
-.subtitle {
-    color: var(--primary);
-    font-weight: 600;
-    margin-bottom: 20px;
-}
-
-.hero-stats {
-    display: flex;
-    gap: 30px;
-    margin: 25px 0;
-    flex-wrap: wrap;
-}
-
-.hero-buttons {
-    margin-top: 20px;
-}
-
-.btn {
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 6px;
-    margin-right: 10px;
-    font-weight: 500;
-}
-
-.primary {
-    background: var(--primary);
-    color: white;
-}
-
-.secondary {
-    border: 1px solid var(--primary);
-    color: var(--primary);
-}
-
-/* Sections */
-
-.section {
-    padding: 70px 0;
-}
-
-.section.light {
-    background: var(--light);
-}
-
-h2 {
-    font-size: 28px;
-    margin-bottom: 30px;
-}
-
-.card {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: var(--card-shadow);
-    margin-bottom: 20px;
-}
-
-.card h3 {
-    margin-bottom: 10px;
-}
-
-.card ul {
-    margin-left: 18px;
-}
-
-.achievement-list li {
-    margin-bottom: 10px;
-}
-
-/* Skills Grid */
-
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-/* Footer */
-
-footer {
-    text-align: center;
-    padding: 30px 0;
-    background: #111;
-    color: white;
-}
-
-/* Responsive */
-
+/* Responsive adjustments */
 @media (max-width: 768px) {
-
-    .hero h1 {
-        font-size: 30px;
-    }
-
-    .nav {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    nav a {
-        margin-left: 0;
-    }
+    .nav-links { display: none; }
+    .hero h1 { font-size: 1.8rem; }
 }
