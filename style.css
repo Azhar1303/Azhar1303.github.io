@@ -125,12 +125,12 @@ footer a:hover {
 }
 
 
-  .white-link {
-    color: white;
+.white-link {
+    color: rgb(196, 92, 92);
     text-decoration: underline;
     text-underline-offset: 4px;   /* cleaner underline */
   }
 
-  .white-link:hover {
+.white-link:hover {
     opacity: 0.8;                 /* subtle hover feedback */
   }
