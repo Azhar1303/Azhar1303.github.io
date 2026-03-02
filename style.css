@@ -125,12 +125,17 @@ footer a:hover {
 }
 
 
-.white-link {
-    color: rgb(196, 92, 92);
+.custom-link {
+    color: #38bdf8;              /* bright cyan */
     text-decoration: underline;
-    text-underline-offset: 4px;   /* cleaner underline */
+    text-underline-offset: 4px;
+    font-weight: 500;
   }
 
-.white-link:hover {
-    opacity: 0.8;                 /* subtle hover feedback */
+.custom-link:hover {
+    color: #7dd3fc;              /* lighter cyan on hover */
+  }
+
+.custom-link:visited {
+    color: #38bdf8;              /* prevent purple visited color */
   }
